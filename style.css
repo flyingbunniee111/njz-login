@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+.login-page {
+    width: 100%;
+    height: 100vh;
+    height: 100lvh;
+    background: linear-gradient(180deg, #B0ABFF 0%, #D3D8FE 100%);
+    
+    overflow: hidden;
+    display: flex;
+}
+.login-section {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("images/decorative-bg-left.png");
+    background-size: cover;
+}
+.decorative-right {
+    width: 494px;
+    flex-shrink: 0;
+    position: relative;
+
+    background-image: url("images/decorative-bg-right.png");
+    background-size: cover;
+}
+.decorative-right img {
+    position: absolute;
+    left: -258px;
+    bottom: -263px;
+    width: 872px;
+}
+.login-content {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    width: 100%;
+    max-width: 666px;
+    padding: 0 24px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.title img {
+    width: 209px;
+}
+h1 {
+    margin: 0;
+}
+.slogan {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+
+    margin: 0;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.field {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #9C7CE5;
+}
+.field input {
+    flex: 1;
+    font: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    color: #210070;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.field label {
+    color: #9C7CE5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.login-form button {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    font: inherit;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5300A6 0%, #B66DFF 100%);
+    outline: none;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+  .login-page {
+    position: relative;
+    height: auto;
+    min-height: calc(100svh + 100px);
+  }
+
+  .decorative-right {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    background-image: none;
+    pointer-events: none;
+  }
+  .login-content {
+    gap: 40px;
+  }
+
+  .login-section {
+    align-items: flex-start;
+    padding-top: 18.8svh;
+  }
+  .slogan {
+    font-size: 16px;
+  }
+  form {
+    gap: 20px;
+  }
+  .field label,
+  .field input {
+    font-size: 18px;
+  }
+  .login-form button {
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+    .decorative-right img {
+    width: 66.3svh;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10svh;
+  }
+}
